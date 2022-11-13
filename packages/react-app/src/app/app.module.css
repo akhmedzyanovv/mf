@@ -1,1 +1,13 @@
 /* Your styles goes here. */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container>.tree {
+    flex: 2;
+}
+
+.container>.log {
+    flex: 1;
+}

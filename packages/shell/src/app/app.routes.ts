@@ -15,13 +15,15 @@ const reactWrapperOptions: WrapperOptions = {
 
 export const appRoutes: Route[] = [
   {
-    path: 'angular',
+    path: '',
     component: WrapperComponent,
+    outlet: 'angular-app',
     data: angularWrapperOptions,
   },
   {
-    path: 'react',
+    path: '',
     component: WrapperComponent,
+    outlet: 'react-app',
     data: reactWrapperOptions,
   },
 ];

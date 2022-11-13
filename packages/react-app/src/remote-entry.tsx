@@ -1,9 +1,15 @@
-import ReactDOM from 'react-dom';
-import App from './app/app';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { App } from './app/app';
 
 class ReactMfe extends HTMLElement {
   connectedCallback() {
-    ReactDOM.render(<App/>, this);
+    const root = ReactDOM.createRoot(this);
+    root.render(
+      <React.StrictMode>
+        <App/>
+      </React.StrictMode>
+    )
   }
 }
 

@@ -1,4 +1,9 @@
-<P>SHELL</P>
-<button routerLink='angular'>angular MF</button>
-<button routerLink='react'>react MF</button>
-<router-outlet></router-outlet>
+<app-header></app-header>
+<div class="content">
+  <div class="card">
+    <router-outlet name="angular-app"></router-outlet>
+  </div>
+  <div class="card">
+    <router-outlet name="react-app"></router-outlet>
+  </div>
+</div>

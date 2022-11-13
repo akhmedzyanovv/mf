@@ -1,0 +1,27 @@
+:host {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+app-header {
+    height: 60px;
+    box-shadow: 1px 1px 10px #0000001f;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/*TO SHARE*/
+.card {
+    flex: 1;
+    margin: 12px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px #0000001f;
+    padding: 12px;
+}
